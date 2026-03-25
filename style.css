@@ -1,0 +1,179 @@
+.lol {
+    color:forestgreen;
+}
+.lol:hover {
+    animation-name: animate;
+    animation-duration: 5s;
+}
+@keyframes animate {
+    from {
+        background-color: aliceblue
+    }
+    to {
+        background-color: aqua
+    }
+}
+
+.img1 {
+    border:2px solid black;
+    border-radius: 10px;
+    width:500px;
+    height: auto;
+}
+
+.slider {
+    width: 500px;
+    overflow: hidden;
+}
+
+/* hide radio */
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slides img {
+    width: 500px;
+}
+
+/* movement */
+#s2:checked ~ .slides { transform: translateX(-500px); }
+#s3:checked ~ .slides { transform: translateX(-1000px); }
+#s4:checked ~ .slides { transform: translateX(-1500px); }
+#s5:checked ~ .slides { transform: translateX(-2000px); }
+
+/* buttons outside */
+.controls {
+    margin-top: 10px;
+}
+
+.controls label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    border: 2px solid black;
+    border-radius: 50%;   /* makes it circle */
+
+    text-align: center;
+    line-height: 40px;    /* centers the arrow */
+
+    cursor: pointer;
+    margin: 5px;
+
+    background: white;
+
+}
+.controls label:hover {
+    background: grey;
+    color: white;
+}
+
+
+.font {
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: forestgreen;
+}
+body {
+    background-image: url("img/bg3.jpg");
+    background-size: cover;        /* fills screen */
+    background-position: center;   /* center image */
+    background-repeat: no-repeat;  /* no repeat */
+}
+.tt {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size:35px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 2px;
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+
+}
+h1 {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size:40px;
+    color: white;
+
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+}
+h2 {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size:30px;
+    color: white;
+
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+}
+
+.im {
+    width: 50px;   /* smaller, fits with text */
+    height: auto;   /* keeps proportions */
+
+}
+.t1 {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size:25px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 2px;
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+
+}
+.t2 {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size:20px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 2px;
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+
+}
+.hh {
+    font-family: "Arial Rounded MT Bold", sans-serif;
+    font-size:50px;
+    color: white;
+
+    text-shadow:
+            -1px -1px 0 black,
+            1px -1px 0 black,
+            -1px  1px 0 black,
+            1px  1px 0 black;
+}
+
+.img1 {
+    width: 300px;
+    height: auto;
+    transition: transform 0.3s ease; /* smooth animation */
+}
+
+.im:hover {
+    transform: scale(1.2); /* 1.2 = 120% of original size */
+}
